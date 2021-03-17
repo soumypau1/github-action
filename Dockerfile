@@ -1,2 +1,2 @@
 FROM bitnami/apache:latest
-COPY index.html 
+COPY index.html /opt/bitnami/apache/htdocs/index.html
