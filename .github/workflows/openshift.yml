@@ -34,7 +34,7 @@ name: OpenShift
 # https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets
 env:
   # ⬇️ EDIT with your registry and registry path.
-  REGISTRY: us.icr.io/github-ations
+  REGISTRY: us.icr.io/github-actions
   # ⬇️ EDIT with your registry username.
   REGISTRY_USER: iamapikey
   REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
