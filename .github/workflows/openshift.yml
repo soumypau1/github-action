@@ -134,7 +134,7 @@ jobs:
 
         # Make sure the app port is exposed
         oc patch svc $APP_NAME -p "{ \"spec\": { \"ports\": [{ \"name\": \"$PORT-tcp\", \"port\": $PORT }] } }"
-        oc expose service $APP_NAME --port=$PORT
+        oc create route edge --service=$APP_NAME --port=$PORT
 
         oc get all --selector="$SELECTOR"
         set +x
